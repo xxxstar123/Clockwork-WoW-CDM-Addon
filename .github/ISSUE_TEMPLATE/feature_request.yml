@@ -1,0 +1,29 @@
+name: Feature request
+description: Suggest an idea or an option for Clockwork
+title: "[Idea] "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: "Thanks for helping make Clockwork better! One idea per request, please."
+  - type: textarea
+    id: idea
+    attributes:
+      label: What would you like Clockwork to do?
+      placeholder: "e.g. a Show / Hide rule for 'in a group', or a new bar type"
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: Why? What are you trying to set up?
+      placeholder: "Your class / spec and the situation where you'd use it"
+  - type: dropdown
+    id: client
+    attributes:
+      label: Game
+      options: [Retail, WoW Forever / Classic, Both]
+  - type: textarea
+    id: extra
+    attributes:
+      label: Screenshots or examples (optional)
