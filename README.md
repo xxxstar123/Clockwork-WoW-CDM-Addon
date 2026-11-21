@@ -6,7 +6,7 @@
 
 For every class and spec · Retail (12.x) and WoW Forever (1.60.x)
 
-[![Latest release](https://img.shields.io/github/v/release/xxxstar123/Clockwork-WoW-CDM-Addon?include_prereleases&label=download)](https://github.com/xxxstar123/Clockwork-WoW-CDM-Addon/releases)
+[![Download on CurseForge](https://img.shields.io/badge/download-CurseForge-F16436?logo=curseforge&logoColor=white)](https://www.curseforge.com/projects/1819552)
 [![Discord](https://img.shields.io/badge/Discord-join-5865F2?logo=discord&logoColor=white)](https://discord.gg/j3TH89X9wZ)
 [![Donate with PayPal](https://img.shields.io/badge/donate-PayPal-00457C?logo=paypal&logoColor=white)](https://www.paypal.com/donate/?business=mywowace%40proton.me&no_recurring=0&item_name=Support+Clockwork&currency_code=USD)
 
@@ -231,8 +231,8 @@ Type `/cwk d` (or press **Design mode** in the settings). Everything unlocks.
 
 ## Install
 
-1. Download `Clockwork-<version>.zip` from [Releases](https://github.com/xxxstar123/Clockwork-WoW-CDM-Addon/releases).
-2. Unzip it. You get a folder named `Clockwork`.
+1. Get Clockwork from [CurseForge](https://www.curseforge.com/projects/1819552) – the easiest way is the CurseForge app, which also keeps it up to date. Or press **Download** on the CurseForge page.
+2. If you downloaded the zip yourself, unzip it. You get a folder named `Clockwork`.
 3. Put that folder in your AddOns folder:
    - Retail: `World of Warcraft/_retail_/Interface/AddOns/`
    - WoW Forever: `World of Warcraft/_forever_/Interface/AddOns/`
