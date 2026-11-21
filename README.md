@@ -10,9 +10,9 @@ For every class and spec · Retail (12.x) and WoW Forever (1.60.x)
 [![Discord](https://img.shields.io/badge/Discord-join-5865F2?logo=discord&logoColor=white)](https://discord.gg/j3TH89X9wZ)
 [![Donate with PayPal](https://img.shields.io/badge/donate-PayPal-00457C?logo=paypal&logoColor=white)](https://www.paypal.com/donate/?business=mywowace%40proton.me&no_recurring=0&item_name=Support+Clockwork&currency_code=USD)
 
-<img src="media/video/retail-guardian-live-collapse.webp" alt="Clockwork in a Retail Guardian Druid fight: aura icons come and go, and the rows close up live" width="520">
+<img src="https://raw.githubusercontent.com/xxxstar123/Clockwork-WoW-CDM-Addon/main/media/video/retail-guardian-live-collapse.webp" alt="Clockwork in a Retail Guardian Druid fight: aura icons come and go, and the rows close up live" width="520">
 
-<sub>A Retail Guardian Druid fight. [Watch the full clip (mp4)](media/video/retail-guardian-live-collapse.mp4)</sub>
+<sub>A Retail Guardian Druid fight. [Watch the full clip (mp4)](https://github.com/xxxstar123/Clockwork-WoW-CDM-Addon/blob/main/media/video/retail-guardian-live-collapse.mp4)</sub>
 
 </div>
 
@@ -48,35 +48,35 @@ For every class and spec · Retail (12.x) and WoW Forever (1.60.x)
 
 Put icons and bars in groups, and groups inside groups. Each group has its own layout, spacing, alignment and **Grow from** point, so a nested row can grow from its centre while its parent column grows upward.
 
-![Groups: Row, Column and Free layouts, Spacing, Align and Grow from](media/diagrams/01-groups.png)
+![Groups: Row, Column and Free layouts, Spacing, Align and Grow from](https://raw.githubusercontent.com/xxxstar123/Clockwork-WoW-CDM-Addon/main/media/diagrams/01-groups.png)
 
 Full guide: [Groups & growth tutorial](docs/groups-and-growth.md).
 
 ### Collapse in combat
 
-<img src="media/video/retail-resto-shaman.webp" alt="Retail Restoration Shaman fight with Clockwork" width="460">
+<img src="https://raw.githubusercontent.com/xxxstar123/Clockwork-WoW-CDM-Addon/main/media/video/retail-resto-shaman.webp" alt="Retail Restoration Shaman fight with Clockwork" width="460">
 
-<sub>Retail Restoration Shaman. [Full clip (mp4)](media/video/retail-resto-shaman.mp4)</sub>
+<sub>Retail Restoration Shaman. [Full clip (mp4)](https://github.com/xxxstar123/Clockwork-WoW-CDM-Addon/blob/main/media/video/retail-resto-shaman.mp4)</sub>
 
 Hidden icons take no place. A buff drops and its row closes up; row 2 drops onto an empty row 1; the side bars meet in the middle. This is the default **Frozen** engine: Clockwork works out every row's positions out of combat and swaps between them in the fight. Under *Behaviour → Hidden icons → In combat* you can also try **Live** (beta), where Blizzard measures the rows itself – side bars in some layouts may still overlap a little; a fix is coming.
 
-![Collapse in combat](media/diagrams/02-collapse-in-combat.png)
+![Collapse in combat](https://raw.githubusercontent.com/xxxstar123/Clockwork-WoW-CDM-Addon/main/media/diagrams/02-collapse-in-combat.png)
 
 Clockwork lays everything out out of combat. In combat, Blizzard's own aura frames move the icons, so the layout keeps working while aura data is hidden from addons.
 
-![How it stays safe in combat](media/diagrams/07-safe-in-combat.png)
+![How it stays safe in combat](https://raw.githubusercontent.com/xxxstar123/Clockwork-WoW-CDM-Addon/main/media/diagrams/07-safe-in-combat.png)
 
 ### Keep its place, or close the gap
 
 Per bar: *Keep its place while hidden* holds an empty slot so nothing around it moves; untick it and the neighbours close up.
 
-![Keep its place while hidden vs Close the gap](media/diagrams/03-keep-place-vs-close-gap.png)
+![Keep its place while hidden vs Close the gap](https://raw.githubusercontent.com/xxxstar123/Clockwork-WoW-CDM-Addon/main/media/diagrams/03-keep-place-vs-close-gap.png)
 
 ### Collapse warnings with a Fix
 
 When something stops a row from collapsing – an icon of a different size in the middle, say – the group gets a yellow **!**. Its tooltip names the cause, and the group's General tab has a **Fix** button. Turn *Collapse warnings* on in Behaviour to also get a line in chat.
 
-![Collapse warning: the ! badge, its tooltip and the Fix button](media/diagrams/06-collapse-warning.png)
+![Collapse warning: the ! badge, its tooltip and the Fix button](https://raw.githubusercontent.com/xxxstar123/Clockwork-WoW-CDM-Addon/main/media/diagrams/06-collapse-warning.png)
 
 ### Presets
 
@@ -85,7 +85,7 @@ Each element type has its own preset list: spell icons, aura icons, cast bars, a
 - **When inactive**: Hide, Dim or Desaturate.
 - **Glows**: Pixel glow, Marching ants, Static glow, or Blizzard's own proc glow – with colour, thickness, speed and offset.
 
-![Presets: one preset shared by many icons, When inactive states, four glow styles](media/diagrams/04-presets.png)
+![Presets: one preset shared by many icons, When inactive states, four glow styles](https://raw.githubusercontent.com/xxxstar123/Clockwork-WoW-CDM-Addon/main/media/diagrams/04-presets.png)
 
 ### Bars
 
@@ -94,13 +94,13 @@ Each element type has its own preset list: spell icons, aura icons, cast bars, a
 - **Cast bar** with colours for casting, channeling, can't-interrupt, interrupted, finished and every empower stage, plus a latency zone and its own Show / Hide rules.
 - **Auto width**: a bar fits the longest item of its row or column.
 
-![Bars: aura bars, stack timers, cast bar with Show / Hide rules, Auto width](media/diagrams/05-bars.png)
+![Bars: aura bars, stack timers, cast bar with Show / Hide rules, Auto width](https://raw.githubusercontent.com/xxxstar123/Clockwork-WoW-CDM-Addon/main/media/diagrams/05-bars.png)
 
 ### Power bar and class resource
 
-<img src="media/video/forever-druid-forms.webp" alt="WoW Forever Druid switching forms: the power bar and icons follow each form" width="600">
+<img src="https://raw.githubusercontent.com/xxxstar123/Clockwork-WoW-CDM-Addon/main/media/video/forever-druid-forms.webp" alt="WoW Forever Druid switching forms: the power bar and icons follow each form" width="600">
 
-<sub>WoW Forever Druid, switching forms. [Full clip (mp4)](media/video/forever-druid-forms.mp4)</sub>
+<sub>WoW Forever Druid, switching forms. [Full clip (mp4)](https://github.com/xxxstar123/Clockwork-WoW-CDM-Addon/blob/main/media/video/forever-druid-forms.mp4)</sub>
 
 The power bar follows your form: Mana in caster form, Rage in Bear, Energy in Cat – or pick a different power per form. Up to three texts, five tick marks per power, and your class resource as pips: combo points, holy power, soul shards, runes, chi, arcane charges, essence. Stagger for Brewmasters.
 
@@ -125,7 +125,7 @@ Every group – and the cast bar and power bar – can show or hide by situation
 
 Type `/cwk d` (or press **Design mode** in the settings). Everything unlocks.
 
-![Design mode layout](media/shots/designmode-layout.png)
+![Design mode layout](https://raw.githubusercontent.com/xxxstar123/Clockwork-WoW-CDM-Addon/main/media/shots/designmode-layout.png)
 
 - **Drag** to move. **Alt+drag** moves freely without joining a group. **Shift-click** selects more; edit several at once.
 - **Snap** to other elements, the screen centre and a grid (Grid W / Grid H).
@@ -134,10 +134,10 @@ Type `/cwk d` (or press **Design mode** in the settings). Everything unlocks.
 - **Undo**, and **Tidy wrappers** to remove groups that only wrap one thing (only where nothing on screen moves).
 
 <p>
-<img src="media/shots/designmode-palette.png" alt="Design mode palette" height="360">
+<img src="https://raw.githubusercontent.com/xxxstar123/Clockwork-WoW-CDM-Addon/main/media/shots/designmode-palette.png" alt="Design mode palette" height="360">
 </p>
 
-![Design mode toolbar](media/shots/designmode-toolbar.png)
+![Design mode toolbar](https://raw.githubusercontent.com/xxxstar123/Clockwork-WoW-CDM-Addon/main/media/shots/designmode-toolbar.png)
 
 ---
 
@@ -146,84 +146,84 @@ Type `/cwk d` (or press **Design mode** in the settings). Everything unlocks.
 <details>
 <summary><b>Settings window</b> (General, Behaviour, Font, Elements)</summary>
 
-![General](media/windows/01-options-general.png)
-![Behaviour](media/windows/02-options-behaviour.png)
-![Font](media/windows/03-options-font.png)
-![Elements](media/windows/04-options-elements.png)
+![General](https://raw.githubusercontent.com/xxxstar123/Clockwork-WoW-CDM-Addon/main/media/windows/01-options-general.png)
+![Behaviour](https://raw.githubusercontent.com/xxxstar123/Clockwork-WoW-CDM-Addon/main/media/windows/02-options-behaviour.png)
+![Font](https://raw.githubusercontent.com/xxxstar123/Clockwork-WoW-CDM-Addon/main/media/windows/03-options-font.png)
+![Elements](https://raw.githubusercontent.com/xxxstar123/Clockwork-WoW-CDM-Addon/main/media/windows/04-options-elements.png)
 
 </details>
 
 <details>
 <summary><b>Design mode</b> (enter, toolbar, selected group, add menu)</summary>
 
-![Design mode](media/windows/06-design-enter.png)
-![Toolbar](media/windows/07a-design-toolbar.png)
-![Selected group](media/windows/07b-design-group-selected.png)
-![Add menu](media/windows/08-design-add-menu.png)
-![Add submenu](media/windows/09-design-add-submenu.png)
+![Design mode](https://raw.githubusercontent.com/xxxstar123/Clockwork-WoW-CDM-Addon/main/media/windows/06-design-enter.png)
+![Toolbar](https://raw.githubusercontent.com/xxxstar123/Clockwork-WoW-CDM-Addon/main/media/windows/07a-design-toolbar.png)
+![Selected group](https://raw.githubusercontent.com/xxxstar123/Clockwork-WoW-CDM-Addon/main/media/windows/07b-design-group-selected.png)
+![Add menu](https://raw.githubusercontent.com/xxxstar123/Clockwork-WoW-CDM-Addon/main/media/windows/08-design-add-menu.png)
+![Add submenu](https://raw.githubusercontent.com/xxxstar123/Clockwork-WoW-CDM-Addon/main/media/windows/09-design-add-submenu.png)
 
 </details>
 
 <details>
 <summary><b>Icon</b> (General, Spell, Texts, Cooldown, Active, Forms, Create preset)</summary>
 
-![General](media/windows/11-icon-general.png)
-![Spell](media/windows/12-icon-spell.png)
-![Texts](media/windows/13-icon-texts.png)
-![Cooldown](media/windows/14-icon-cooldown.png)
-![Active](media/windows/15-icon-active.png)
-![Forms](media/windows/16-icon-forms.png)
-![Create preset](media/windows/35-preset-create.png)
+![General](https://raw.githubusercontent.com/xxxstar123/Clockwork-WoW-CDM-Addon/main/media/windows/11-icon-general.png)
+![Spell](https://raw.githubusercontent.com/xxxstar123/Clockwork-WoW-CDM-Addon/main/media/windows/12-icon-spell.png)
+![Texts](https://raw.githubusercontent.com/xxxstar123/Clockwork-WoW-CDM-Addon/main/media/windows/13-icon-texts.png)
+![Cooldown](https://raw.githubusercontent.com/xxxstar123/Clockwork-WoW-CDM-Addon/main/media/windows/14-icon-cooldown.png)
+![Active](https://raw.githubusercontent.com/xxxstar123/Clockwork-WoW-CDM-Addon/main/media/windows/15-icon-active.png)
+![Forms](https://raw.githubusercontent.com/xxxstar123/Clockwork-WoW-CDM-Addon/main/media/windows/16-icon-forms.png)
+![Create preset](https://raw.githubusercontent.com/xxxstar123/Clockwork-WoW-CDM-Addon/main/media/windows/35-preset-create.png)
 
 </details>
 
 <details>
 <summary><b>Group</b> (General, Show / Hide)</summary>
 
-![General](media/windows/17-group-general.png)
-![Show / Hide](media/windows/18-group-showhide.png)
+![General](https://raw.githubusercontent.com/xxxstar123/Clockwork-WoW-CDM-Addon/main/media/windows/17-group-general.png)
+![Show / Hide](https://raw.githubusercontent.com/xxxstar123/Clockwork-WoW-CDM-Addon/main/media/windows/18-group-showhide.png)
 
 </details>
 
 <details>
 <summary><b>Aura bar</b> (General, Bar, Colors, Texts, Forms)</summary>
 
-![General](media/windows/19-aurabar-general.png)
-![Bar](media/windows/20-aurabar-bar.png)
-![Colors](media/windows/21-aurabar-colors.png)
-![Texts](media/windows/22-aurabar-texts.png)
-![Forms](media/windows/23-aurabar-forms.png)
+![General](https://raw.githubusercontent.com/xxxstar123/Clockwork-WoW-CDM-Addon/main/media/windows/19-aurabar-general.png)
+![Bar](https://raw.githubusercontent.com/xxxstar123/Clockwork-WoW-CDM-Addon/main/media/windows/20-aurabar-bar.png)
+![Colors](https://raw.githubusercontent.com/xxxstar123/Clockwork-WoW-CDM-Addon/main/media/windows/21-aurabar-colors.png)
+![Texts](https://raw.githubusercontent.com/xxxstar123/Clockwork-WoW-CDM-Addon/main/media/windows/22-aurabar-texts.png)
+![Forms](https://raw.githubusercontent.com/xxxstar123/Clockwork-WoW-CDM-Addon/main/media/windows/23-aurabar-forms.png)
 
 </details>
 
 <details>
 <summary><b>Cast bar</b> (General, Bar, Colors, Texts)</summary>
 
-![General](media/windows/24-castbar-general.png)
-![Bar](media/windows/25-castbar-bar.png)
-![Colors](media/windows/26-castbar-colors.png)
-![Texts](media/windows/27-castbar-texts.png)
+![General](https://raw.githubusercontent.com/xxxstar123/Clockwork-WoW-CDM-Addon/main/media/windows/24-castbar-general.png)
+![Bar](https://raw.githubusercontent.com/xxxstar123/Clockwork-WoW-CDM-Addon/main/media/windows/25-castbar-bar.png)
+![Colors](https://raw.githubusercontent.com/xxxstar123/Clockwork-WoW-CDM-Addon/main/media/windows/26-castbar-colors.png)
+![Texts](https://raw.githubusercontent.com/xxxstar123/Clockwork-WoW-CDM-Addon/main/media/windows/27-castbar-texts.png)
 
 </details>
 
 <details>
 <summary><b>Power bar</b> (General, Look, Texts, Forms, Show / Hide)</summary>
 
-![General](media/windows/30-power-general.png)
-![Look](media/windows/31-power-look.png)
-![Texts](media/windows/32-power-texts.png)
-![Forms](media/windows/33-power-forms.png)
-![Show / Hide](media/windows/34-power-showhide.png)
+![General](https://raw.githubusercontent.com/xxxstar123/Clockwork-WoW-CDM-Addon/main/media/windows/30-power-general.png)
+![Look](https://raw.githubusercontent.com/xxxstar123/Clockwork-WoW-CDM-Addon/main/media/windows/31-power-look.png)
+![Texts](https://raw.githubusercontent.com/xxxstar123/Clockwork-WoW-CDM-Addon/main/media/windows/32-power-texts.png)
+![Forms](https://raw.githubusercontent.com/xxxstar123/Clockwork-WoW-CDM-Addon/main/media/windows/33-power-forms.png)
+![Show / Hide](https://raw.githubusercontent.com/xxxstar123/Clockwork-WoW-CDM-Addon/main/media/windows/34-power-showhide.png)
 
 </details>
 
 <details>
 <summary><b>Pickers</b> (spells, buffs, items, equipment)</summary>
 
-![Spells](media/windows/36-picker-spells.png)
-![Buffs](media/windows/37-picker-buffs.png)
-![Items](media/windows/38-picker-items.png)
-![Equipment](media/windows/39-picker-equipment.png)
+![Spells](https://raw.githubusercontent.com/xxxstar123/Clockwork-WoW-CDM-Addon/main/media/windows/36-picker-spells.png)
+![Buffs](https://raw.githubusercontent.com/xxxstar123/Clockwork-WoW-CDM-Addon/main/media/windows/37-picker-buffs.png)
+![Items](https://raw.githubusercontent.com/xxxstar123/Clockwork-WoW-CDM-Addon/main/media/windows/38-picker-items.png)
+![Equipment](https://raw.githubusercontent.com/xxxstar123/Clockwork-WoW-CDM-Addon/main/media/windows/39-picker-equipment.png)
 
 </details>
 
