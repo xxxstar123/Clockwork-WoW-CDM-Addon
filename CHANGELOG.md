@@ -2,6 +2,18 @@
 
 Recent versions of Clockwork (1.8.x).
 
+## 1.8.31
+- New: item buffs. An aura icon can now show the buff an item gives you: a trinket's on-use buff, a trinket proc (Equip effect) or a potion. Retail and WoW Forever.
+- In the buff picker, "Item buffs" comes first: Trinket 1 / Trinket 2 (follows the slot, also after a gear swap) or an exact item (your trinkets, potions in your bags).
+- It works like every aura icon: hidden while the buff is not on you (takes no place unless "Keep its place while hidden"), shown in combat, works in collapsing rows, with Show / Hide rules, glows and sounds.
+- Clockwork finds the buff from the game's own data, the item's use spell and its tooltip. For the few procs the data can't link, it learns the buff out of combat the first time it sees it. The new "Item" tab shows the buff IDs and where each came from; "Forget learned ids" (or `/cwk itemauras forget <itemID>`) clears one item, `/cwk itemauras reset` clears all.
+- Lighter in combat: proc glow, glow lines, timer text, the key press look and the rotation highlight are now made before the fight, not on their first show in combat.
+- Lighter glow animation: the traveling glow / marching ants redraw at most about 60 times a second and only move pieces that moved. Same look and speed.
+- Faster proc glow checks.
+- Errors now show in BugSack (or the game's error window): if an icon or bar fails to update, Clockwork reports it once instead of failing silently.
+- Fixed: an error when a bar leaves a collapsing row that stays a collapsing row (e.g. a bar dragged out of a side-bar group).
+- Existing designs and settings are unchanged. Restart WoW fully after updating (new files) – a /reload is not enough.
+
 ## 1.8.30.2
 - Collapse in combat (Live): a row of aura icons no longer slides to the side when it holds an aura you haven't learned or an ability Clockwork hides itself (seen on Guardian with Ravage not learned).
 - The same fix for a row holding a group that a Show / Hide rule or a form hides in combat, and for a whole row hidden by its own rule (the next row no longer sits a row too high).

@@ -20,7 +20,7 @@ For every class and spec · Retail (12.x) and WoW Forever (1.60.x)
 
 ## What you get that most popular cooldown addons don't
 
-- **Lightweight.** Built to stay light from the start: event-driven with no idle per-frame loops, a burst of game events in one frame becomes a single update, no new frames are created in combat, and animation runs only on icons that are glowing.
+- **Lightweight.** Built to stay light from the start: event-driven, a burst of game events in one frame becomes a single update, and the pieces a fight can show (proc glow, glow lines, timer text, highlights) are made before combat, not on their first show. Per-frame work runs only for what is moving on screen – glowing icons (capped at about 60 redraws a second), running timers, cast and swing bars – and, in combat, for collapsing rows that close gaps around buffs and target debuffs.
 - **Show / Hide rules that do what you mean.** Per group and per cast bar: show or hide in combat, out of combat, with a target, on an enemy, mounted, dead, resting, in a dungeon, raid, PvP, delve or the open world. Combine several conditions per rule – *Show* always wins when rules disagree.
 - **Keep its place while hidden – per element.** Each icon or bar decides for itself: hold its slot, or let its neighbors close up.
 - **Collapse warnings with a one-click Fix.** A row that can't collapse (different icon sizes, a cooldown icon in an aura row) gets a yellow **!** in design mode, the reason in plain words, and a **Fix** button with one Undo.
@@ -109,6 +109,7 @@ The power bar follows your form: Mana in caster form, Rage in Bear, Energy in Ca
 
 - **Track**: cooldowns, charges, your buffs, debuffs on you, your debuffs on the target, and missing buffs.
 - **Items and trinkets**: usable items from your bags and on-use equipment.
+- **Item buffs**: show the buff a trinket or potion gives you – on-use buffs, trinket procs and potions – by slot (Trinket 1 / Trinket 2, follows gear swaps) or by exact item.
 - **Stance and form rules** on every item, read from the game for every class: Druid forms, Warrior stances, Stealth, Shadowform, Ghost Wolf and more. Swap the spell per form (Maul in Bear, Shred in Cat).
 - **Sounds per state**: when ready, when on cooldown, when missing resources, when a buff starts or ends.
 - **Keybinds** on icons, including macros and popular action-bar addons.
@@ -508,7 +509,7 @@ Look for the yellow **!** on the group in design mode, read its tooltip and pres
 Yes. *Options → General → Import from Coolinator* reads your Coolinator settings and adds its designs – spells, groups and positions – as Clockwork designs.
 
 **Does it cost FPS?**
-It's built to stay light: event-driven with no idle per-frame loops, several events in one frame become one update, no new frames are created in combat, and only glowing icons animate.
+It's built to stay light: event-driven, several events in one frame become one update, and what a fight can show is made before combat. Per-frame work runs only for what is moving – glowing icons, running timers, cast and swing bars – and, in combat, for collapsing rows that close gaps.
 
 **Can I move or resize everything?**
 Yes – everything is drag-and-drop in design mode, and every element has its own settings window.
