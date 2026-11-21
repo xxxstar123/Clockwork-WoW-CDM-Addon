@@ -7,6 +7,7 @@
 For every class and spec · Retail (12.x) and WoW Forever (1.60.x)
 
 [![Latest release](https://img.shields.io/github/v/release/xxxstar123/Clockwork-WoW-CDM-Addon?include_prereleases&label=download)](https://github.com/xxxstar123/Clockwork-WoW-CDM-Addon/releases)
+[![Discord](https://img.shields.io/badge/Discord-join-5865F2?logo=discord&logoColor=white)](https://discord.gg/j3TH89X9wZ)
 [![Donate with PayPal](https://img.shields.io/badge/donate-PayPal-00457C?logo=paypal&logoColor=white)](https://www.paypal.com/donate/?business=mywowace%40proton.me&no_recurring=0&item_name=Support+Clockwork&currency_code=USD)
 
 <img src="media/video/retail-guardian-live-collapse.webp" alt="Clockwork in a Retail Guardian Druid fight: aura icons come and go, and the rows close up live" width="520">
@@ -282,14 +283,18 @@ It is event-driven with no idle per-frame loops; only glowing icons animate.
 **Can I move or resize everything?**
 Yes – everything is drag-and-drop in design mode, and every element has its own settings window.
 
+## Discord
+
+Join the [**Clockwork Discord**](https://discord.gg/j3TH89X9wZ) for help, bug reports, ideas and release news. Type `/bug` or `/idea` there for a quick form, and pick **Release Pings** in #welcome to hear about new versions.
+
 ## Ideas & feature requests
 
 Missing an option? Clockwork grows from players' ideas – most of its features started as a request.
-[**Suggest a feature**](https://github.com/xxxstar123/Clockwork-WoW-CDM-Addon/issues/new?template=feature_request.yml) – tell us what you want it to do and for which class / spec.
+[**Suggest a feature**](https://github.com/xxxstar123/Clockwork-WoW-CDM-Addon/issues/new?template=feature_request.yml) – tell us what you want it to do and for which class / spec. Or post it in the [Discord](https://discord.gg/j3TH89X9wZ) (`/idea`).
 
 ## Bug reports
 
-Open a [**bug report**](https://github.com/xxxstar123/Clockwork-WoW-CDM-Addon/issues/new?template=bug_report.yml). Please include:
+Open a [**bug report**](https://github.com/xxxstar123/Clockwork-WoW-CDM-Addon/issues/new?template=bug_report.yml), or use `/bug` in the [Discord](https://discord.gg/j3TH89X9wZ). Please include:
 
 1. Your client (Retail or Forever) and Clockwork version.
 2. What you did, what you expected, and what happened.
