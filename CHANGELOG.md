@@ -9,9 +9,9 @@ Recent versions of Clockwork (1.8.x).
 - Works for every class and spec, Retail and WoW Forever. Nothing changes out of combat, no settings changed. A /reload is enough after updating.
 
 ## 1.8.30.1
-- Design mode: the move handle now sits in the centre of the selected group, icon or bar. Every other control stays where it was.
+- Design mode: the move handle now sits in the center of the selected group, icon or bar. Every other control stays where it was.
 - Design mode: hovering any group, icon or bar shows a soft gold outline; the selected one keeps the full gold outline, with a thin dark line around it so it reads on bright backgrounds.
-- New `/cwk livetint` (debug): see-through colours on the boxes the in-combat collapse uses, for a screenshot when you report a layout problem.
+- New `/cwk livetint` (debug): see-through colors on the boxes the in-combat collapse uses, for a screenshot when you report a layout problem.
 - `/cwk debug` now also saves the in-combat collapse state. A /reload is enough after updating.
 
 ## 1.8.30
@@ -23,7 +23,7 @@ Recent versions of Clockwork (1.8.x).
 ## 1.8.29
 - Cleaner addon folder: Core, UI, Display, Tracking, Designer and Media.
 - The three largest files are split into smaller ones by job.
-- No change in behaviour. Restart WoW fully after updating (files moved).
+- No change in behavior. Restart WoW fully after updating (files moved).
 
 ## 1.8.28.1
 - New icon presets hide the GCD swipe by default; existing presets keep their setting.
@@ -69,7 +69,7 @@ Recent versions of Clockwork (1.8.x).
 - Aura lookup caching.
 
 ## 1.8.4 – 1.8.5
-- Spells you haven't learned are hidden in play and drawn grey in design mode.
+- Spells you haven't learned are hidden in play and drawn gray in design mode.
 
 ## 1.8.0 – 1.8.3
 - Major lightweight pass: about 76 % fewer objects, 70 % less garbage, zero idle per-frame updates.

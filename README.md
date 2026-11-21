@@ -22,11 +22,11 @@ For every class and spec · Retail (12.x) and WoW Forever (1.60.x)
 
 - **Lightweight.** Built to stay light from the start: event-driven with no idle per-frame loops, a burst of game events in one frame becomes a single update, no new frames are created in combat, and animation runs only on icons that are glowing.
 - **Show / Hide rules that do what you mean.** Per group and per cast bar: show or hide in combat, out of combat, with a target, on an enemy, mounted, dead, resting, in a dungeon, raid, PvP, delve or the open world. Combine several conditions per rule – *Show* always wins when rules disagree.
-- **Keep its place while hidden – per element.** Each icon or bar decides for itself: hold its slot, or let its neighbours close up.
+- **Keep its place while hidden – per element.** Each icon or bar decides for itself: hold its slot, or let its neighbors close up.
 - **Collapse warnings with a one-click Fix.** A row that can't collapse (different icon sizes, a cooldown icon in an aura row) gets a yellow **!** in design mode, the reason in plain words, and a **Fix** button with one Undo.
 - **Stance and form rules.** Show a group or icon only in Bear, Cat, Travel or caster form – or swap the spell per form – for every class with stances or forms.
 - **Sounds per state.** A sound when a cooldown is ready, a buff starts or a buff ends.
-- **Every text is yours to place.** The stack number, cooldown, keybind, spell name, timer and latency texts on icons and bars can each be dragged to any spot, resized, recoloured, rotated, shortened or hidden. Drag them in a live preview of the real element: they snap to its corners, edges or centre, and the arrow keys fine-tune by the pixel.
+- **Every text is yours to place.** The stack number, cooldown, keybind, spell name, timer and latency texts on icons and bars can each be dragged to any spot, resized, recolored, rotated, shortened or hidden. Drag them in a live preview of the real element: they snap to its corners, edges or center, and the arrow keys fine-tune by the pixel.
 - **Stack timers counted from your casts.** See every running stack of Ironfur (and similar effects) as its own timer, counted from your casts, even in combat.
 - **Auto that knows the unit.** Aura bars and icons on *Auto* watch you or your target from the game's own spell data and what Clockwork has seen – a debuff on your target is found without you picking the unit.
 - **Rotation assist (Retail).** Clockwork highlights the spell Blizzard's assisted combat suggests next right on your own icons, and a *Single-Button Assistant* icon shows the suggested spell live – your layout, your look, no action bar needed.
@@ -37,7 +37,7 @@ For every class and spec · Retail (12.x) and WoW Forever (1.60.x)
 
 - **Collapse that works in combat.** When a buff drops, its row closes the gap in the middle of the fight. An empty row lets the next row drop into its place, and bars that appear (cast bar, stack timers) push the row aside and give the space back.
 - **Import your Coolinator profiles.** Already set up in Coolinator? Bring your layouts, spells, groups and positions over with one click (*Options → General → Import from Coolinator*) and keep tuning them in Clockwork.
-- **A visual drag-and-drop designer.** Drag spells, buffs, bars and groups straight onto the screen. Snap to edges, centre lines and a grid. Undo included.
+- **A visual drag-and-drop designer.** Drag spells, buffs, bars and groups straight onto the screen. Snap to edges, center lines and a grid. Undo included.
 - **Presets.** One look shared by many icons or bars. Change the preset once, every element using it follows. Detach any element for a private copy.
 - **Retail and WoW Forever.** One addon, both clients.
 
@@ -47,7 +47,7 @@ For every class and spec · Retail (12.x) and WoW Forever (1.60.x)
 
 ### Groups: rows, columns and free layouts
 
-Put icons and bars in groups, and groups inside groups. Each group has its own layout, spacing, alignment and **Grow from** point, so a nested row can grow from its centre while its parent column grows upward.
+Put icons and bars in groups, and groups inside groups. Each group has its own layout, spacing, alignment and **Grow from** point, so a nested row can grow from its center while its parent column grows upward.
 
 ![Groups: Row, Column and Free layouts, Spacing, Align and Grow from](https://raw.githubusercontent.com/xxxstar123/Clockwork-WoW-CDM-Addon/main/media/diagrams/01-groups.png)
 
@@ -59,7 +59,7 @@ Full guide: [Groups & growth tutorial](docs/groups-and-growth.md).
 
 <sub>Retail Restoration Shaman. [Full clip (mp4)](https://github.com/xxxstar123/Clockwork-WoW-CDM-Addon/blob/main/media/video/retail-resto-shaman.mp4)</sub>
 
-Hidden icons take no place. A buff drops and its row closes up; row 2 drops onto an empty row 1; the side bars meet in the middle. This is the default **Frozen** engine: Clockwork works out every row's positions out of combat and swaps between them in the fight. Under *Behaviour → Hidden icons → In combat* you can also try **Live** (beta), where Blizzard measures the rows itself – side bars in some layouts may still overlap a little; a fix is coming.
+Hidden icons take no place. A buff drops and its row closes up; row 2 drops onto an empty row 1; the side bars meet in the middle. This is the default **Frozen** engine: Clockwork works out every row's positions out of combat and swaps between them in the fight. Under *Behavior → Hidden icons → In combat* you can also try **Live** (beta), where Blizzard measures the rows itself – side bars in some layouts may still overlap a little; a fix is coming.
 
 ![Collapse in combat](https://raw.githubusercontent.com/xxxstar123/Clockwork-WoW-CDM-Addon/main/media/diagrams/02-collapse-in-combat.png)
 
@@ -69,22 +69,22 @@ Clockwork lays everything out out of combat. In combat, Blizzard's own aura fram
 
 ### Keep its place, or close the gap
 
-Per bar: *Keep its place while hidden* holds an empty slot so nothing around it moves; untick it and the neighbours close up.
+Per bar: *Keep its place while hidden* holds an empty slot so nothing around it moves; untick it and the neighbors close up.
 
 ![Keep its place while hidden vs Close the gap](https://raw.githubusercontent.com/xxxstar123/Clockwork-WoW-CDM-Addon/main/media/diagrams/03-keep-place-vs-close-gap.png)
 
 ### Collapse warnings with a Fix
 
-When something stops a row from collapsing – an icon of a different size in the middle, say – the group gets a yellow **!**. Its tooltip names the cause, and the group's General tab has a **Fix** button. Turn *Collapse warnings* on in Behaviour to also get a line in chat.
+When something stops a row from collapsing – an icon of a different size in the middle, say – the group gets a yellow **!**. Its tooltip names the cause, and the group's General tab has a **Fix** button. Turn *Collapse warnings* on in Behavior to also get a line in chat.
 
 ![Collapse warning: the ! badge, its tooltip and the Fix button](https://raw.githubusercontent.com/xxxstar123/Clockwork-WoW-CDM-Addon/main/media/diagrams/06-collapse-warning.png)
 
 ### Presets
 
-Each element type has its own preset list: spell icons, aura icons, cast bars, aura bars, power bars, groups. A preset holds the look (size, style, texts, glow, swipe, colours); the spell, form rules and sounds stay on the element.
+Each element type has its own preset list: spell icons, aura icons, cast bars, aura bars, power bars, groups. A preset holds the look (size, style, texts, glow, swipe, colors); the spell, form rules and sounds stay on the element.
 
 - **When inactive**: Hide, Dim or Desaturate.
-- **Glows**: Pixel glow, Marching ants, Static glow, or Blizzard's own proc glow – with colour, thickness, speed and offset.
+- **Glows**: Pixel glow, Marching ants, Static glow, or Blizzard's own proc glow – with color, thickness, speed and offset.
 
 ![Presets: one preset shared by many icons, When inactive states, four glow styles](https://raw.githubusercontent.com/xxxstar123/Clockwork-WoW-CDM-Addon/main/media/diagrams/04-presets.png)
 
@@ -92,7 +92,7 @@ Each element type has its own preset list: spell icons, aura icons, cast bars, a
 
 - **Aura bars** for any buff or debuff, horizontal or vertical, with an icon and texts.
 - **Stack timers**: one bar for every active application, with a tick per cast.
-- **Cast bar** with colours for casting, channeling, can't-interrupt, interrupted, finished and every empower stage, plus a latency zone and its own Show / Hide rules.
+- **Cast bar** with colors for casting, channeling, can't-interrupt, interrupted, finished and every empower stage, plus a latency zone and its own Show / Hide rules.
 - **Auto width**: a bar fits the longest item of its row or column.
 
 ![Bars: aura bars, stack timers, cast bar with Show / Hide rules, Auto width](https://raw.githubusercontent.com/xxxstar123/Clockwork-WoW-CDM-Addon/main/media/diagrams/05-bars.png)
@@ -113,7 +113,7 @@ The power bar follows your form: Mana in caster form, Rage in Bear, Energy in Ca
 - **Sounds per state**: when ready, when on cooldown, when missing resources, when a buff starts or ends.
 - **Keybinds** on icons, including macros and popular action-bar addons.
 - **Key press feedback**: the icon shows the pushed look or a flash when you press its key.
-- **Spells you haven't learned** hide and take no place (shown grey in design mode).
+- **Spells you haven't learned** hide and take no place (shown gray in design mode).
 - **Retail only**: highlight Blizzard's suggested next spell, and a Single-Button Assistant icon that shows the current suggestion.
 
 ### Show / Hide rules
@@ -144,7 +144,7 @@ While design mode is on, every element is shown, even ones that are normally hid
 |---|---|
 | Select one element and open its settings | Left-click it. |
 | Add to or remove from the selection | **Shift-click**. |
-| Box select | **Shift+drag** on empty screen. Everything whose centre is inside the box is selected. |
+| Box select | **Shift+drag** on empty screen. Everything whose center is inside the box is selected. |
 | Add a box to the selection | **Ctrl+Shift+drag**. |
 | Clear the selection | **Shift-click** on empty screen. |
 | Select the group around an item | Click the **Select group** button (small box icon) above it. Click it again on that group to go one more level up. |
@@ -169,7 +169,7 @@ Drag any element with the left mouse button. What happens on the drop depends on
 | Free move (never join, stack or group) | Hold **Alt** while you drag. An item from a row or column comes out loose where you drop it. |
 | Reorder inside a row or column | Drag the item along the row. The gold line shows the new spot. |
 | Put an item into a group | Drop it inside the group. You can also drop it just past the end of a row or column. |
-| Take an item out of a group | Drag it out of the group and drop it on empty screen. A grey **Free** label shows when it will become loose. You can also right-click it and choose **Move out of group**. |
+| Take an item out of a group | Drag it out of the group and drop it on empty screen. A gray **Free** label shows when it will become loose. You can also right-click it and choose **Move out of group**. |
 | Put something between two groups | Drop it near the edge of a group inside a row or column. It goes beside that group, not into it. |
 | Group two icons | Drop a loose icon on another loose icon. A gold **Group** label shows. Both go into a new row. |
 | Stack groups | Drag a group onto another group. A gold **Stack** label and line show the side (above, below, left or right). The nearest side wins. |
@@ -181,18 +181,18 @@ Drag any element with the left mouse button. What happens on the drop depends on
 **Snapping** (when **Snap** is ticked on the banner):
 
 - Works on elements that sit loose on the screen (not inside a group).
-- Snaps within 8 px to the screen centre and to the edges and centres of other loose elements. A gold guide line shows what it snapped to.
+- Snaps within 8 px to the screen center and to the edges and centers of other loose elements. A gold guide line shows what it snapped to.
 - When nothing is close, it snaps to the grid (Grid W / Grid H).
 
 A group that becomes empty because you moved or deleted its last item is removed by itself. A new empty group you added stays.
 
 ### The move handle
 
-Select one element and a small square with a gold 4-way arrow appears in its exact centre. Other buttons sit in a strip above the element.
+Select one element and a small square with a gold 4-way arrow appears in its exact center. Other buttons sit in a strip above the element.
 
 | Control | What it does |
 |---|---|
-| **Move handle** (4 arrows, centre) | Drag to move the element. Click to open its settings. Right-click for its quick menu (the same menu as right-clicking the element). |
+| **Move handle** (4 arrows, center) | Drag to move the element. Click to open its settings. Right-click for its quick menu (the same menu as right-clicking the element). |
 | **Pencil** (groups) | Opens the group's settings. Tooltip: "Options". |
 | **Select group** (small box, items and groups inside a group) | Selects the group around it. |
 | **X** (top right) | Deletes it. Undo brings it back. |
@@ -219,7 +219,7 @@ Each **+** opens the add menu:
 | **Swing** | Main hand, Off hand, Ranged |
 | **Group** | (a new empty group) |
 
-Rows that aren't available yet are grey and marked "soon". The new element takes the look of the item next to it. Then the spell, aura or item picker opens so you can choose what it tracks. If there is nothing to pick, its settings open.
+Rows that aren't available yet are gray and marked "soon". The new element takes the look of the item next to it. Then the spell, aura or item picker opens so you can choose what it tracks. If there is nothing to pick, its settings open.
 
 ### Right-click menus
 
@@ -234,14 +234,14 @@ Right-click an element (or its move handle). The menu depends on what you clicke
 | Ungroup | Breaks the group up. Its items stay where they are on screen and are selected. |
 | Tidy wrappers (whole design) | Same as the banner's **Tidy wrappers** button. |
 | Move out of group | Only for a group inside another group. Moves it out, right after its old group. |
-| Centre horizontally | Centres it left-right: on the screen, or inside its free group. |
-| Centre vertically | Centres it top-bottom: on the screen, or inside its free group. |
+| Center horizontally | Centers it left-right: on the screen, or inside its free group. |
+| Center vertically | Centers it top-bottom: on the screen, or inside its free group. |
 | **Saved anchors** | |
-| Align *name* | Moves the group's centre to a saved anchor. One row per anchor, or "No saved anchors". |
-| Save anchor as... | Type a name and press **Save** (or Enter) to save this group's centre as an anchor. |
+| Align *name* | Moves the group's center to a saved anchor. One row per anchor, or "No saved anchors". |
+| Save anchor as... | Type a name and press **Save** (or Enter) to save this group's center as an anchor. |
 | Delete saved anchors | Removes all saved anchors. |
 
-Centre horizontally / vertically are grey for a group inside a row or column (the row places it). Saved anchors work only for groups that sit loose on the screen. They are not tied to one design, so you can line up groups across designs.
+Center horizontally / vertically are gray for a group inside a row or column (the row places it). Saved anchors work only for groups that sit loose on the screen. They are not tied to one design, so you can line up groups across designs.
 
 **An icon, bar or other item**
 
@@ -309,15 +309,15 @@ The **Design mode** banner sits at the top of the screen. It shows two lines of 
 
 | Control | What it does |
 |---|---|
-| **Snap** | Snap to other elements, the screen centre and the grid. |
-| **Grid** | Shows or hides the grid. The centre lines are gold. |
+| **Snap** | Snap to other elements, the screen center and the grid. |
+| **Grid** | Shows or hides the grid. The center lines are gold. |
 | **Grid W** | Space between vertical lines, 2-64 px (default 8). |
 | **Grid H** | Space between horizontal lines, 2-64 px (default 8). |
 | **Tidy wrappers** | Removes groups that hold only one thing, but only where nothing on screen moves. One Undo step, and a short report in chat. Same as `/cwk tidy`. |
 | **Undo** | Takes back the last change. Dimmed when there is nothing to undo. |
 | **Done** | Leaves design mode. |
 
-Snap, Grid W and Grid H are also in **Settings > Behaviour > Design mode** (Snapping, Grid width, Grid height). A change in one place shows in the other.
+Snap, Grid W and Grid H are also in **Settings > Behavior > Design mode** (Snapping, Grid width, Grid height). A change in one place shows in the other.
 
 ### Texts on icons and bars
 
@@ -339,7 +339,7 @@ Every text on an icon or bar can be moved, restyled or hidden. That includes the
 | Action | How |
 |---|---|
 | Pick a text to edit | Click it in the preview, or click its name in the row of tabs above the preview. Click a text again to pick the one under it. |
-| Move a text | Drag it. On release it snaps to the nearest of 9 points (corners, edges, centre) plus a whole-pixel offset. Gold dots show the points. |
+| Move a text | Drag it. On release it snaps to the nearest of 9 points (corners, edges, center) plus a whole-pixel offset. Gold dots show the points. |
 | Move without changing its anchor | Hold **Alt** while you drag. |
 | Nudge | Arrow keys move the picked text 1 px, **Shift** 5 px. They work after you click a text, until you click the empty preview, close the window, switch tab or enter combat. |
 | Put it back | **Reset position**. |
@@ -353,8 +353,8 @@ Every text on an icon or bar can be moved, restyled or hidden. That includes the
 | Width limit (longer text ends in "...") | Yes | Yes | Yes |
 | Characters (max letters, then "...") | Yes | Yes | No |
 | Rotation (0° / 90° / 180° / 270°) and Angle (-180° to 180°) | Yes | Yes | Yes |
-| Colour | Yes | Yes | Yes |
-| Timer texts | Cooldown: Tenths, Colour by time left (up to several "Under N s" colours, **+ Add colour**) | Time: Shows (Left, Done, Total or "Left / Total"; stack timers also Next drop), Tenths, Seconds sign | Shows (format), Power, Percent sign |
+| Color | Yes | Yes | Yes |
+| Timer texts | Cooldown: Tenths, Color by time left (up to several "Under N s" colors, **+ Add color**) | Time: Shows (Left, Done, Total or "Left / Total"; stack timers also Next drop), Tenths, Seconds sign | Shows (format), Power, Percent sign |
 
 Rotation rows appear only when your game client can turn text. Font, outline, shadow and overall text size are set once for every text in **Settings > Font**.
 
@@ -371,10 +371,10 @@ Rotation rows appear only when your game client can turn text. Font, outline, sh
 ## Every window
 
 <details>
-<summary><b>Settings window</b> (General, Behaviour, Font, Elements)</summary>
+<summary><b>Settings window</b> (General, Behavior, Font, Elements)</summary>
 
 ![General](https://raw.githubusercontent.com/xxxstar123/Clockwork-WoW-CDM-Addon/main/media/windows/01-options-general.png)
-![Behaviour](https://raw.githubusercontent.com/xxxstar123/Clockwork-WoW-CDM-Addon/main/media/windows/02-options-behaviour.png)
+![Behavior](https://raw.githubusercontent.com/xxxstar123/Clockwork-WoW-CDM-Addon/main/media/windows/02-options-behaviour.png)
 ![Font](https://raw.githubusercontent.com/xxxstar123/Clockwork-WoW-CDM-Addon/main/media/windows/03-options-font.png)
 ![Elements](https://raw.githubusercontent.com/xxxstar123/Clockwork-WoW-CDM-Addon/main/media/windows/04-options-elements.png)
 
@@ -502,7 +502,7 @@ Both: Retail 12.x and WoW Forever 1.60.x, from the same download.
 Look for the yellow **!** on the group in design mode, read its tooltip and press **Fix** in the group's General tab. `/cwk debug` names the row, icon and reason.
 
 **Live or Frozen?**
-**Frozen** (the default, recommended) closes gaps in combat from positions Clockwork worked out beforehand. **Live** (beta) lets Blizzard measure the rows live; it can still overlap side bars a little in some layouts. Switch it under *Behaviour → Hidden icons → In combat*.
+**Frozen** (the default, recommended) closes gaps in combat from positions Clockwork worked out beforehand. **Live** (beta) lets Blizzard measure the rows live; it can still overlap side bars a little in some layouts. Switch it under *Behavior → Hidden icons → In combat*.
 
 **Can I bring my Coolinator setup?**
 Yes. *Options → General → Import from Coolinator* reads your Coolinator settings and adds its designs – spells, groups and positions – as Clockwork designs.
@@ -536,7 +536,7 @@ Clockwork is free. If it helps you, you can support its development – entirely
 
 [![Donate with PayPal](https://img.shields.io/badge/Donate-PayPal-00457C?logo=paypal&logoColor=white&style=for-the-badge)](https://www.paypal.com/donate/?business=mywowace%40proton.me&no_recurring=0&item_name=Support+Clockwork&currency_code=USD)
 
-## Licence
+## License
 
 Copyright © 2026 xxxstar123. **All rights reserved.**
 You are free to download Clockwork and use it in the game. Copying, modifying or redistributing the code requires written permission, and **no AI use** is allowed – no training, and no AI tools or agents reusing the code. See [LICENSE](LICENSE) and [AGENTS.md](AGENTS.md).
