@@ -54,7 +54,7 @@ Put icons and bars in groups, and groups inside groups. Each group has its own l
 
 ![Groups: Row, Column and Free layouts, Spacing, Align and Grow from](https://raw.githubusercontent.com/xxxstar123/Clockwork-WoW-CDM-Addon/main/media/diagrams/01-groups.png)
 
-Full guide: [Groups & growth tutorial](docs/groups-and-growth.md).
+Full guide: [Groups & growth tutorial](https://github.com/xxxstar123/Clockwork-WoW-CDM-Addon/blob/main/docs/groups-and-growth.md).
 
 ### Collapse in combat
 
@@ -229,6 +229,6 @@ Clockwork is free. If it helps you, you can support its development – entirely
 ## License
 
 Copyright © 2026 xxxstar123. **All rights reserved.**
-You are free to download Clockwork and use it in the game. Copying, modifying or redistributing the code requires written permission, and **no AI use** is allowed – no training, and no AI tools or agents reusing the code. See [LICENSE](LICENSE) and [AGENTS.md](AGENTS.md).
+You are free to download Clockwork and use it in the game. Copying, modifying or redistributing the code requires written permission, and **no AI use** is allowed – no training, and no AI tools or agents reusing the code. See [LICENSE](https://github.com/xxxstar123/Clockwork-WoW-CDM-Addon/blob/main/LICENSE) and [AGENTS.md](https://github.com/xxxstar123/Clockwork-WoW-CDM-Addon/blob/main/AGENTS.md).
 
-See [CHANGELOG.md](CHANGELOG.md) for recent changes.
+See [CHANGELOG.md](https://github.com/xxxstar123/Clockwork-WoW-CDM-Addon/blob/main/CHANGELOG.md) for recent changes.
