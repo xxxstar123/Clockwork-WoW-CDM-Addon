@@ -20,6 +20,7 @@ For every class and spec · Retail (12.x) and WoW Forever (1.60.x)
 
 ## What you get that most popular cooldown addons don't
 
+- **Lightweight.** Built to stay light from the start: event-driven with no idle per-frame loops, a burst of game events in one frame becomes a single update, no new frames are created in combat, and animation runs only on icons that are glowing.
 - **Show / Hide rules that do what you mean.** Per group and per cast bar: show or hide in combat, out of combat, with a target, on an enemy, mounted, dead, resting, in a dungeon, raid, PvP, delve or the open world. Combine several conditions per rule – *Show* always wins when rules disagree.
 - **Keep its place while hidden – per element.** Each icon or bar decides for itself: hold its slot, or let its neighbours close up.
 - **Collapse warnings with a one-click Fix.** A row that can't collapse (different icon sizes, a cooldown icon in an aura row) gets a yellow **!** in design mode, the reason in plain words, and a **Fix** button with one Undo.
@@ -38,7 +39,6 @@ For every class and spec · Retail (12.x) and WoW Forever (1.60.x)
 - **A visual drag-and-drop designer.** Drag spells, buffs, bars and groups straight onto the screen. Snap to edges, centre lines and a grid. Undo included.
 - **Presets.** One look shared by many icons or bars. Change the preset once, every element using it follows. Detach any element for a private copy.
 - **Retail and WoW Forever.** One addon, both clients.
-- **Lightweight.** Event-driven, no idle per-frame loops; animation runs only on icons that are glowing.
 
 ---
 
@@ -278,7 +278,7 @@ Look for the yellow **!** on the group in design mode, read its tooltip and pres
 Yes. *Options → General → Import from Coolinator* reads your Coolinator settings and adds its designs – spells, groups and positions – as Clockwork designs.
 
 **Does it cost FPS?**
-It is event-driven with no idle per-frame loops; only glowing icons animate.
+It's built to stay light: event-driven with no idle per-frame loops, several events in one frame become one update, no new frames are created in combat, and only glowing icons animate.
 
 **Can I move or resize everything?**
 Yes – everything is drag-and-drop in design mode, and every element has its own settings window.
