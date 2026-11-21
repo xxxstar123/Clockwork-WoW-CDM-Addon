@@ -240,6 +240,8 @@ Type `/cwk d` (or press **Design mode** in the settings). Everything unlocks.
 
 ## Quick start
 
+New to Clockwork? On your first login a **Choose a starter layout** window offers a ready-made layout for your class and spec (Compact, Wide, or Healer). Pick one and tune it – or type `/cwk starter` any time.
+
 1. Type `/cwk` to open the settings.
 2. Each class and spec has its own design, picked automatically. Make a new one under *General → Design for this class and spec*.
 3. Press **Design mode** (or `/cwk d`) and drag a Spell icon, Buff icon or bar from the palette onto the screen.
@@ -258,6 +260,7 @@ Type `/cwk d` (or press **Design mode** in the settings). Everything unlocks.
 | `/cwk livetest` | Check the calls the live collapse uses (in and out of combat) |
 | `/cwk tidy` | Remove groups that only wrap one thing (only where nothing moves; Undo in design mode) |
 | `/cwk aliases reset` | Forget the aura IDs Clockwork learned for your aura icons |
+| `/cwk starter` | Add a ready-made starter layout for your class and spec (deletes nothing) |
 | `/cwk tour` | Show every window and tab by itself, 4 s each (`/cwk tour stop` ends it) |
 
 ## FAQ

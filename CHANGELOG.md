@@ -2,6 +2,24 @@
 
 Recent versions of Clockwork (1.8.x).
 
+## 1.8.30.2
+- Collapse in combat (Live): a row of aura icons no longer slides to the side when it holds an aura you haven't learned or an ability Clockwork hides itself (seen on Guardian with Ravage not learned).
+- The same fix for a row holding a group that a Show / Hide rule or a form hides in combat, and for a whole row hidden by its own rule (the next row no longer sits a row too high).
+- Rows with bars on the left and right of a middle of icons: the side bars no longer get pushed outwards when an aura is up behind one that is down. At most a one-frame flicker remains when an aura changes.
+- Works for every class and spec, Retail and WoW Forever. Nothing changes out of combat, no settings changed. A /reload is enough after updating.
+
+## 1.8.30.1
+- Design mode: the move handle now sits in the centre of the selected group, icon or bar. Every other control stays where it was.
+- Design mode: hovering any group, icon or bar shows a soft gold outline; the selected one keeps the full gold outline, with a thin dark line around it so it reads on bright backgrounds.
+- New `/cwk livetint` (debug): see-through colours on the boxes the in-combat collapse uses, for a screenshot when you report a layout problem.
+- `/cwk debug` now also saves the in-combat collapse state. A /reload is enough after updating.
+
+## 1.8.30
+- Starter layouts: new players get a "Choose a starter layout" window with a ready-made layout for their class and spec (Compact, Wide, Healer).
+- Every Retail spec and every WoW Forever class covered; spell IDs checked against the game data.
+- `/cwk starter` adds a starter layout any time, without deleting anything.
+- Existing designs and imported profiles are never touched; never shown in combat.
+
 ## 1.8.29
 - Cleaner addon folder: Core, UI, Display, Tracking, Designer and Media.
 - The three largest files are split into smaller ones by job.
