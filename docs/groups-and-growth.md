@@ -12,13 +12,13 @@ Every group arranges its children (icons, bars or nested groups) by its **Layout
 
 - **Row**: children sit side by side.
   - **Grow**: `Right` (items append left to right) or `Left`.
-  - **Alignment**: top, centre or bottom of the row.
+  - **Alignment**: top, center or bottom of the row.
 - **Column**: children stack vertically.
   - **Grow**: `Down` or `Up`.
-  - **Alignment**: left, centre or right of the column.
+  - **Alignment**: left, center or right of the column.
 - **Free**: you place each child yourself. No automatic flow.
 
-**Spacing** sets the exact gap between neighbours in screen pixels (default 2–3 px). Every gap snaps to whole physical pixels.
+**Spacing** sets the exact gap between neighbors in screen pixels (default 2–3 px). Every gap snaps to whole physical pixels.
 
 ---
 
@@ -27,12 +27,12 @@ Every group arranges its children (icons, bars or nested groups) by its **Layout
 ### A. Screen anchor ("stays put at")
 The point of a top-level group that stays glued to the screen:
 - **Bottom**: the bottom edge never moves; the group grows upward.
-- **Center**: the group grows outward equally from its centre.
+- **Center**: the group grows outward equally from its center.
 - **Top**: the top edge stays put; the group grows downward.
 
 ### B. Grow from
 Where the children pin inside the group when items show or hide:
-- **Center**: children centre on the group's axis; when items come and go, the rest shift around the middle.
+- **Center**: children center on the group's axis; when items come and go, the rest shift around the middle.
 - **Left / Right / Top / Bottom**: children pin to that edge and append in the grow direction.
 - **Auto** (nested groups): follow the enclosing group.
 
@@ -45,14 +45,14 @@ A collapsing row holds aura icons in the middle and bars on each side.
 ![Collapse in combat](../media/diagrams/02-collapse-in-combat.png)
 
 - **No icons up**: the side bars slide in and meet in the middle.
-- **Icons appear**: they claim the centre and push the side bars out evenly.
+- **Icons appear**: they claim the center and push the side bars out evenly.
 - **Two icon rows**: if the lower row is empty, the upper row drops into its place.
 - **In combat**: the collapse runs on Blizzard's own aura frames, so it keeps working while auras are hidden from addons.
 - **However you grouped it**: wrapper groups with one child and rows inside rows are read as one row, so `Row[left bars, Row[icon column, right bars]]` collapses exactly like `Row[left bars, icon column, right bars]`. `/cwk debug` prints how the row was read.
 
 ### Keep its place while hidden
 Per bar:
-- **Off (default)**: the bar takes no space while inactive; its neighbours close up.
+- **Off (default)**: the bar takes no space while inactive; its neighbors close up.
 - **On**: the bar keeps its empty slot, so nothing around it moves.
 
 ![Keep its place vs close the gap](../media/diagrams/03-keep-place-vs-close-gap.png)
@@ -86,8 +86,8 @@ If a row can't collapse (for example an icon with a different size sits in the m
 
 Why it works:
 1. The top column grows **up** from its **bottom** anchor, so the ability icons below never jump when the stack-timer bar comes and goes.
-2. The collapsing row grows from the **centre**, so bars and icons balance around your character.
-3. The centre column grows from the centre too, so procs stay over your power bar.
+2. The collapsing row grows from the **center**, so bars and icons balance around your character.
+3. The center column grows from the center too, so procs stay over your power bar.
 4. With no auras up, the side bars meet in the middle; pop a defensive and it sits right beside your procs.
 
 ---
