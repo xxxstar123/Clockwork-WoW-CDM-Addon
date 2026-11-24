@@ -2,6 +2,49 @@
 
 Recent versions of Clockwork (1.8.x).
 
+## 1.8.32.1
+
+This update also includes 1.8.32 (never released on its own). Every fix below is for Retail and WoW Forever unless it says otherwise. A /reload is enough after updating.
+
+### New
+- Totems: aura bars and icons for spells that summon a totem now show while the totem is up, with its own timer. Shaman totems (Healing Tide, Spirit Link, Healing Stream and every other totem), and the other spells that use totem slots (Paladin Consecration, Warlock demons, Priest Shadowfiend, Monk invokes). Before, these never showed, because a totem puts no buff on you.
+
+### Fixed - Auto width bars
+- Auto width bars follow their row again, like in 1.8.31: they change size with your forms, in and out of combat, with Collapse in combat set to Live or Frozen. (Before, a bar kept the width of the form you pulled in for the whole fight.)
+- Bars that hide when idle (swing timer) or show only in one form (combo points, cat energy) no longer take a wrong or old width.
+- Fixed bars becoming about 3 times too wide after opening design mode while their group was hidden.
+- Frozen: an Auto width power bar no longer shrinks to a tiny size at the pull.
+- Cast bars keep their width in combat by default, so they never shrink to a side bar's width.
+- The bar's "In combat" choice (General tab) is still there: "Follow the row" (new default) or "Keep its width" (default for cast bars). If you picked "Keep its width" on a bar in 1.8.28 to 1.8.32, please pick it again - those versions did not save that choice.
+
+### Fixed - Totems
+- Totems in slot 5 and 6 now show (when 4 totems were already up).
+- The Healing Rain bar shows the Healing Rain buff, not the Surging Totem timer, and no longer shows twice (Frozen).
+- Live: totem bars get their own place and no longer sit on top of the next bar.
+- A totem you cast for the first time in a fight is recognised more often.
+
+### Fixed - Charge bars
+- The recharge now fills and counts down in combat too, also in Mythic+ keys and boss fights (it stayed empty there).
+- In combat the recharge no longer flashes on the left (ready) segment before jumping to the right one: the game places it on the recharging segment.
+
+### Fixed - /reload in combat, keys and raids
+- After a /reload in a Mythic+ key, a boss fight or a raid: the second row of icons no longer sits on top of the first one.
+- After a /reload in combat in a key: vertical aura bars, pip bars and stack-timer bars show again (they stayed hidden until the key ended).
+- WoW Forever: after a /reload in combat, the layout catches up again.
+
+### Fixed - Layout
+- Frozen: a bar hidden at the pull (e.g. Enrage) no longer overlaps the icons when it shows up - its place opens at the pull.
+- Frozen: Restoration Shaman's aura rows no longer float above the cast bar in combat.
+- A vertical bar placed directly in a scaled row is now as tall as the other side bars.
+- Glows: Blizzard's proc glow no longer covers an icon's cooldown swipe or its stack number.
+
+### Still in progress (next update)
+- Shaman, Live: Healing Tide Totem can be missed when the game reports the totem a moment after the cast (about 0.1 s).
+- Shaman, Frozen: side totem bars (Healing Tide, Spirit Link) can still move or overlap when a totem drops mid-fight.
+- Live: a combo point bar inside a collapsing row can't follow the row's width in combat (Frozen is fine) - the game hides that width from addons in combat.
+
+Existing designs and settings are unchanged.
+
 ## 1.8.31
 - New: item buffs. An aura icon can now show the buff an item gives you: a trinket's on-use buff, a trinket proc (Equip effect) or a potion. Retail and WoW Forever.
 - In the buff picker, "Item buffs" comes first: Trinket 1 / Trinket 2 (follows the slot, also after a gear swap) or an exact item (your trinkets, potions in your bags).
