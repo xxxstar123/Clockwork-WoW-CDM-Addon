@@ -2,6 +2,64 @@
 
 Recent versions of Clockwork (1.8.x).
 
+## 1.8.33
+
+Every change below is for Retail and WoW Forever. **Full WoW restart needed after updating** (new files) - quit WoW and start it again; a /reload does not load new files, and the new glows can be missing or look wrong until you restart.
+
+### ✨ Highlights - what's new
+
+**🔆 Brand-new glows + a new "Flash" effect**
+- **Pixel glow:** 16 short, crisp dashes marching round the icon, in a brighter shade of your glow colour.
+- **Marching ants:** a thin ring with a soft halo and 4 bright streaks travelling round it together.
+- **Static glow:** a bright ring with a wide soft glow fading outward and a short glow fading in over the icon edge.
+- **NEW - Flash** (icon window > Active tab): the ring lights up, two light sweeps race along the edges, then it fades while sparks drift away - every 2 seconds while the state lasts. Uses your glow colour; Direction flips the sweeps.
+- **Lighter than ever:** no glow runs any code per frame any more - the game animates them on its own, even in combat inside buff / debuff icons.
+
+**📋 Layouts per spec**
+- Your layout lists show only the layouts of the spec you are playing - a Guardian druid sees Guard, a Feral druid sees CAT. No more scrolling past every spec's layouts.
+- Presets stay shared by all layouts. Nothing is deleted or renamed; a layout you named yourself that belongs to no spec shows everywhere, so nothing disappears. On WoW Forever (one spec per class) the list shows your class's layouts.
+
+**📤 Profiles - share your layouts as text**
+- `/cwk` > Profiles: tick one layout or all of them and **Export**; paste a text and **Import**. The text holds each layout and every preset it uses, so it looks the same on another PC - WoW Forever and Retail read each other's texts.
+- Same name? You choose: Overwrite or Import as copy ("Name (2)"). Your own presets never change. "Use for my current spec" makes the imported layout this spec's design. Design mode: the group menu has "Export this layout".
+
+**🎨 Masque support**
+- With Masque loaded: Behavior tab > Icons > **"Skin icons with Masque"** (off by default). One Masque group per preset, so each preset can wear its own skin. Clockwork keeps your size, glows, texts, states and swipe colour in place. Turning it off brings Clockwork's look back at once.
+
+**🔗 Smarter buff / debuff icons (linked auras)**
+- Spells whose aura has another id now show the aura worth tracking, from the game's own data - WoW Forever **Pounce shows Pounce Bleed (18 s)**, not the 2 s stun; Retail e.g. Corruption, Outbreak, Rake. The element window tells you what the icon shows. Want the other aura? Type its id in the Spell ID box.
+
+**👓 Easier to read**
+- Grey hint text in Clockwork's windows is much brighter: descriptions, notes, search boxes, greyed-out menu entries and the Spell ID / Item ID tooltip line.
+
+### More improvements
+- Coolinator import: "Flash" and "Marching ants" now come in as Clockwork's own Flash and Marching ants (before, both came in as Blizzard glow).
+- Your glow numbers are kept; presets that still had the old default glow numbers switch to the new look by themselves (once), also in texts imported from an older Clockwork. Gap (Marching ants) now goes up to 48, Softness (Static glow) up to 16.
+- Bar window: "Keep its place while hidden" is grayed out while In combat is Frozen (Frozen already keeps the place); your setting comes back when you pick Live.
+- Aura pips / stack timers: at most 10 show in combat (Blizzard's aura buttons); the setting and a chat line tell you.
+- New layouts and copies are numbered the same way: Name (2), Name (3).
+- Masque: renaming or deleting a preset removes its old Masque group at once.
+- Selecting several items: time color steps, color thresholds and the power bar Quick setup now apply to all of them.
+- Design mode: the collapse warning badge sits outside the group box, so it no longer covers icons.
+- Lighter: key presses no longer create tables on every press.
+- Chat lines start with a gold "Clockwork:"; "Behaviour" tab is now "Behavior" (American spelling everywhere); "Bevelled" border is "Beveled".
+- If the game refuses to create Blizzard's aura slots, Clockwork says so once in chat; a failing bar is reported once to BugSack.
+
+### Fixes
+- Totems (from 1.8.32.2, never released on its own): Frozen totem bars like Spirit Link Totem no longer overlap the icons next to them; a totem bar like Healing Tide Totem shows right after the cast, even when the game fills the slot a moment later.
+- WoW Forever: a Pounce icon set to On: Auto showed nothing - Auto now knows Target for such spells.
+- A proc glow turned on through a spell override (talent or proc) could stay off; Clockwork now also follows the Cooldown Manager's override changes (proc glow, key press look, keybind text, aura links).
+- Switching the proc glow color between gold and pure white kept Blizzard's gold art.
+- The ranged swing bar shows on Retail.
+- Deleting a design with "%" in its name works.
+- Coolinator: a failed reset changes nothing, and an icon the import can't read is skipped on its own instead of its whole layout.
+
+Existing designs and settings are unchanged (apart from the glow look above).
+
+### Still in progress (next update)
+- Frozen: totem bars keep their space while the totem is down (the row does not close up yet; nothing overlaps).
+- Live: the combo point bar width can be off in combat.
+
 ## 1.8.32.1
 
 This update also includes 1.8.32 (never released on its own). Every fix below is for Retail and WoW Forever unless it says otherwise. A /reload is enough after updating.
