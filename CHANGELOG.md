@@ -13,7 +13,7 @@ Every fix below is for Retail and WoW Forever. A `/reload` is enough after updat
 Existing designs and settings are unchanged.
 
 ### Still in progress (next update)
-- Missing-aura icons: a "missing aura" reminder icon does not hide when the buff / debuff is applied while in combat.
+- WoW Forever: a "missing aura" reminder icon does not hide when the buff / debuff is applied while in combat.
 - Frozen: totem bars keep their space while the totem is down (the row does not close up yet; nothing overlaps).
 - Live: the combo point bar width can be off in combat.
 
