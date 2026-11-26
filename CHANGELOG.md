@@ -2,6 +2,20 @@
 
 Recent versions of Clockwork (1.8.x).
 
+## 1.8.33.1
+
+Every fix below is for Retail and WoW Forever. A `/reload` is enough after updating (if you are updating from before 1.8.33, quit WoW and start it again once for 1.8.33's new glow files).
+
+### Fixes - Frozen & collapsing rows
+- **Side aura bars no longer leave an extra gap next to multi-row icons:** When a collapsing row stacked two or more icon rows that tracked both your buffs and target debuffs on different rows (for example Tidal Waves on one row and Flame Shock on the other), vertical side aura bars were pushed one extra icon-width outward in Frozen, Live and out of combat. Side bars (and Shaman totem bars beside them) now sit flush at your normal spacing.
+- **Single shown icon row no longer hovers in the middle beside taller vertical bars:** When a collapsing row or its middle icon column grows from the bottom (or top) next to a two-row-tall vertical aura bar, a single active icon row now stays pinned to the bottom (or top) edge instead of floating in the middle until a second row appears.
+
+Existing designs and settings are unchanged.
+
+### Still in progress (next update)
+- Frozen: totem bars keep their space while the totem is down (the row does not close up yet; nothing overlaps).
+- Live: the combo point bar width can be off in combat.
+
 ## 1.8.33
 
 Every change below is for Retail and WoW Forever. **Full WoW restart needed after updating** (new files) - quit WoW and start it again; a /reload does not load new files, and the new glows can be missing or look wrong until you restart.
